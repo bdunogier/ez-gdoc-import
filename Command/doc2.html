@@ -1,0 +1,283 @@
+<html>
+<head>
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type">
+    <style type="text/css">ol {
+        margin: 0;
+        padding: 0
+    }
+
+    .c10 {
+        padding-top: 19pt;
+        padding-bottom: 11pt;
+        line-height: 1.1;
+        page-break-after: avoid;
+        orphans: 2;
+        widows: 2;
+        direction: ltr
+    }
+
+    .c3 {
+        padding-top: 26pt;
+        padding-bottom: 15pt;
+        line-height: 1.1;
+        page-break-after: avoid;
+        orphans: 2;
+        widows: 2;
+        direction: ltr
+    }
+
+    .c6 {
+        padding-bottom: 11pt;
+        line-height: 1.3636363636363635;
+        orphans: 2;
+        widows: 2;
+        direction: ltr
+    }
+
+    .c9 {
+        orphans: 2;
+        widows: 2;
+        direction: ltr;
+        height: 11pt
+    }
+
+    .c2 {
+        font-family: "Verdana";
+        font-style: italic;
+        color: #162029
+    }
+
+    .c1 {
+        background-color: #ffffff;
+        max-width: 468pt;
+        padding: 72pt 72pt 72pt 72pt
+    }
+
+    .c11 {
+        font-size: 14pt;
+        font-weight: bold;
+        text-decoration: none
+    }
+
+    .c0 {
+        color: #2080df;
+        font-family: "Verdana"
+    }
+
+    .c7 {
+        color: inherit;
+        text-decoration: inherit
+    }
+
+    .c4 {
+        color: #162029;
+        font-family: "Verdana"
+    }
+
+    .c5 {
+        font-family: "Verdana"
+    }
+
+    .c8 {
+        font-size: 18pt
+    }
+
+    .title {
+        padding-top: 0pt;
+        color: #000000;
+        font-size: 21pt;
+        padding-bottom: 0pt;
+        font-family: "Trebuchet MS";
+        line-height: 1.15;
+        page-break-after: avoid;
+        orphans: 2;
+        widows: 2;
+        text-align: left
+    }
+
+    .subtitle {
+        padding-top: 0pt;
+        color: #666666;
+        font-size: 13pt;
+        padding-bottom: 10pt;
+        font-family: "Trebuchet MS";
+        line-height: 1.15;
+        page-break-after: avoid;
+        font-style: italic;
+        orphans: 2;
+        widows: 2;
+        text-align: left
+    }
+
+    li {
+        color: #000000;
+        font-size: 11pt;
+        font-family: "Arial"
+    }
+
+    p {
+        margin: 0;
+        color: #000000;
+        font-size: 11pt;
+        font-family: "Arial"
+    }
+
+    h1 {
+        padding-top: 10pt;
+        color: #000000;
+        font-size: 16pt;
+        padding-bottom: 0pt;
+        font-family: "Trebuchet MS";
+        line-height: 1.15;
+        page-break-after: avoid;
+        orphans: 2;
+        widows: 2;
+        text-align: left
+    }
+
+    h2 {
+        padding-top: 10pt;
+        color: #000000;
+        font-weight: bold;
+        font-size: 13pt;
+        padding-bottom: 0pt;
+        font-family: "Trebuchet MS";
+        line-height: 1.15;
+        page-break-after: avoid;
+        orphans: 2;
+        widows: 2;
+        text-align: left
+    }
+
+    h3 {
+        padding-top: 8pt;
+        color: #666666;
+        font-weight: bold;
+        font-size: 12pt;
+        padding-bottom: 0pt;
+        font-family: "Trebuchet MS";
+        line-height: 1.15;
+        page-break-after: avoid;
+        orphans: 2;
+        widows: 2;
+        text-align: left
+    }
+
+    h4 {
+        padding-top: 8pt;
+        color: #666666;
+        text-decoration: underline;
+        font-size: 11pt;
+        padding-bottom: 0pt;
+        font-family: "Trebuchet MS";
+        line-height: 1.15;
+        page-break-after: avoid;
+        orphans: 2;
+        widows: 2;
+        text-align: left
+    }
+
+    h5 {
+        padding-top: 8pt;
+        color: #666666;
+        font-size: 11pt;
+        padding-bottom: 0pt;
+        font-family: "Trebuchet MS";
+        line-height: 1.15;
+        page-break-after: avoid;
+        orphans: 2;
+        widows: 2;
+        text-align: left
+    }
+
+    h6 {
+        padding-top: 8pt;
+        color: #666666;
+        font-size: 11pt;
+        padding-bottom: 0pt;
+        font-family: "Trebuchet MS";
+        line-height: 1.15;
+        page-break-after: avoid;
+        font-style: italic;
+        orphans: 2;
+        widows: 2;
+        text-align: left
+    }</style>
+</head>
+<body class="c1"><p class="c6"><span class="c4">As an eZ Publish kernel developer, the dual stack architecture of eZ Publish 5 offers interesting challenges. While new stack only features are like paradise, making sure things work with legacy is a different place altogether.</span>
+</p>
+<p class="c6"><span class="c4">Over the last weeks, I had the occasion to face such a situation while working on </span><span
+        class="c0"><a class="c7"
+                      href="https://www.google.com/url?q=https://stackedit.io/share.ez.no/blogs/core-development-team/images-on-amazon-s3-it-is-coming&amp;sa=D&amp;usg=AFQjCNGbJso5xKGFg42CQS6IX8omKVmrwg">Cloud
+    Storage support</a></span><span class="c4">. Since binary files are still heavily manipulated by the legacy kernel (content editing, variations generation&hellip;), it had to work with legacy. But it doesn&rsquo;t mean we can&rsquo;t think about how this will impact the new stack.</span>
+</p>
+<h3 class="c3"><a name="h.1god7n7x3r6z"></a><span class="c4 c8">Legacy doesn&rsquo;t mean legacy architecture</span>
+</h3>
+<p class="c6"><span class="c4">With the move to the new stack and Symfony2, we have pretty much moved to a </span><span
+        class="c0"><a class="c7"
+                      href="https://www.google.com/url?q=http://en.wikipedia.org/wiki/SOLID_%2528object-oriented_design%2529&amp;sa=D&amp;usg=AFQjCNFlWqhpW96glClQQF972sIsAIMsLA">SOLID</a></span><span
+        class="c4">&nbsp;approach. TL;DR small, re-usable, swappable, independent classes.</span></p>
+<p class="c6"><span class="c4">Legacy relies on static methods &amp; properties. A </span><span
+        class="c2">lot</span><span class="c4">. Many classes were built to self-instantiate their dependencies, based on INI settings. Many constructors also use eZINI directly to load configuration. With the dual stack, we have a powerful weapon at our disposal: Symfony&rsquo;s Dependency Injection Container. Of course, if we </span><span
+        class="c2">require</span><span class="c4">&nbsp;the Container, it makes us dependent on Symfony itself, and we might not want that. But it doesn&rsquo;t mean we can&rsquo;t separate things !</span>
+</p>
+<h3 class="c3"><a name="h.jalnwgxjan62"></a><span class="c4 c8">First target: legacy [FIXME: very bad title]</span></h3>
+<p class="c6"><span class="c4">The Cloud Storage support story started with a simple goal in mind: make legacy, alone, able to serve images from the cloud. The technical approach was to make the DFS filesystem backend configurable, as </span><span
+        class="c0"><a class="c7"
+                      href="https://www.google.com/url?q=http://share.ez.no/blogs/core-development-team/images-on-amazon-s3-it-is-coming%23eztoc934772_0_0_1&amp;sa=D&amp;usg=AFQjCNF8nQ3-RSPbswXOsVTgqn3CwU-aPg">detailed
+    in in the blog post</a></span><span class="c4">.</span></p>
+<h3 class="c3"><a name="h.cy44vsfu4709"></a><span class="c4 c8">Step one: adding an interface</span></h3>
+<p class="c6"><span class="c4">This is required to make the current handler cleanly swappable, as advised by the &lsquo;L&rsquo;
+    of &lsquo;SOLID&rsquo;, the </span><span class="c0"><a class="c7"
+                                                           href="https://www.google.com/url?q=http://en.wikipedia.org/wiki/Liskov_substitution_principle&amp;sa=D&amp;usg=AFQjCNHgH3wZiWxHmxj2uIpU5a5dbXGm4g">Liskov
+    substitution principle</a></span><span class="c4">.</span></p>
+<h3 class="c3"><a name="h.kp6z61mu8ftl"></a><span class="c4 c8">Step two: make this handler swappable</span></h3>
+<p class="c6"><span class="c4">This is where it gets interesting. How do we initialize the configurable handler, and how do we manage their dependencies? We have room for forward compatibility AND testable code here. We can have clean constructors, that receive dependencies as arguments. This solves the &lsquo;I&rsquo;
+    in &lsquo;SOLID&rsquo;: Dependency inversion principle. Our object can now be initialized by any dependency injection mechanism.</span>
+</p>
+<p class="c6"><span class="c4">Since we don&rsquo;t have a dependency injection container in legacy, we are going to use static methods for initialization. A Factory interface, in this case eZDFSFileHandlerDFSBackendFactoryInterface, is added. It specifies a build() method, without arguments, that will build the object and take care of dependencies. The implementations of this method will read configuration, initialize dependencies, and use them to build the object using the class&rsquo;s constructor. By testing for this interface, the kernel can either use the constructor, or call build, depending on what the class implements. Simple, and efficient.</span>
+</p>
+<p class="c6"><span class="c4">A side benefit is that we can finally use mock objects in our tests, finally moving away from integration tests to unit tests.</span>
+</p>
+<p class="c6"><span class="c4">This gives us legacy implementations that are open for a move up to the new stack, and should avoid repetitions of code.</span>
+</p>
+<h3 class="c3"><a name="h.8qcz4clvh01"></a><span class="c4 c8">Step three: building legacy extensions that replace existing handlers</span>
+</h3>
+<p class="c6"><span class="c4">This is quite obvious, but one step shouldn&rsquo;t be neglected: composer.json. By making sure your extension has this file, the extension can be installed using composer. While it is practical from a maintenance perspective, it gets even more important when we start looking into bundles.</span>
+</p>
+<h3 class="c3"><a name="h.o87nkebbb9c8"></a><span class="c4 c8">Building a bundle on top of the legacy extension</span>
+</h3>
+<p class="c6"><span class="c4">Starting from versions 5.3 / 2014.03, eZPublish supports </span><span class="c0"><a
+        class="c7"
+        href="https://www.google.com/url?q=https://doc.ez.no/display/EZP/Legacy%2Bcode%2Band%2Bfeatures%23Legacycodeandfeatures-Legacybundles&amp;sa=D&amp;usg=AFQjCNH1RHm5LwyQjRXW_SjveVqjE-fVgA">Legacy
+    Bundles</a></span><span class="c4">. Those bundles can either </span><span class="c2">contain </span><span
+        class="c4">one or several eZ Publish extensions, or more interesting in this case, </span><span class="c0"><a
+        class="c7"
+        href="https://www.google.com/url?q=https://doc.ez.no/display/EZP/Legacy%2Bcode%2Band%2Bfeatures%23Legacycodeandfeatures-Alternative:referencinganexistinglegacyextensionviacomposer&amp;sa=D&amp;usg=AFQjCNHYaF2VaoHevBfEPBNohEqebUUBRA">reference
+    &amp; install a legacy extension that already exists</a></span><span class="c4">.</span></p><h4 class="c10"><a
+        name="h.qz15lg5ccj7"></a><span class="c11 c4">Configuration</span></h4>
+<p class="c6"><span class="c4">Let&rsquo;s face it, legacy will soon be a thing of the past. Until then, we can only try to hide it as much as we can, and make its existence transparent. A first domain where it is important is configuration. Developers shouldn&rsquo;t have to jump between YAML files and INI files.</span>
+</p>
+<p class="c6"><span class="c4">A good way to fix this is by </span><span class="c0"><a class="c7"
+                                                                                       href="https://www.google.com/url?q=http://symfony.com/doc/current/cookbook/bundles/extension.html&amp;sa=D&amp;usg=AFQjCNH_IcTAfLV9y9KUb70C0JBnRV4wgA">exposing
+    semantic configuration</a></span><span class="c4">&nbsp;from your bundle. This high-level, validated, compiled configuration can be injected into the Legacy INI settings, allowing the developer to focus on Symfony2 and ignore INI files.</span>
+</p><h4 class="c10"><a name="h.oyag4tnjak3q"></a><span class="c4 c11">Services</span></h4>
+<p class="c6"><span class="c4">In the first part (FIXME: proper link to proper chapter), we saw how we could solve Dependency Injection. Legacy can use static build() methods to use clean constructors and resolve dependencies. But when running the dual stack, in eZ Publish 5 or above, you actually have </span><span
+        class="c0"><a class="c7"
+                      href="https://www.google.com/url?q=https://doc.ez.no/display/EZP/Legacy%2Bcode%2Band%2Bfeatures%23Legacycodeandfeatures-UsingeZPublish5andSymfonyfeaturesinLegacy&amp;sa=D&amp;usg=AFQjCNFnE-94yIlSsWLSq-Zz1McKihx1Vg">access
+    to the Symfony2 Container from legacy</a></span><span class="c4">&nbsp;!</span></p>
+<p class="c6"><span class="c4">But I must digress here: many PHP libraries are shipped in several packages. One that is totally independent from any framework, especially dependency injection container, and one or several that plug the library into frameworks. One such example is </span><span
+        class="c0"><a class="c7"
+                      href="https://www.google.com/url?q=https://github.com/KnpLabs/KnpMenu&amp;sa=D&amp;usg=AFQjCNGIsecypp1EqdG-f4S1SJyaNLG3jA">KnpLabs/KnpMenu</a></span><span
+        class="c4">, independent from Symfony, and </span><span class="c0"><a class="c7"
+                                                                              href="https://www.google.com/url?q=https://github.com/KnpLabs/KnpMenuBundle&amp;sa=D&amp;usg=AFQjCNHkCmGqGLCDaPhUMKvHYZUdinFI9Q">KnpLabs/KnpMenuBundle</a></span><span
+        class="c4">, that integrates the library into Symfony2, by providing semantic configuration, twig templates, services&hellip;</span>
+</p>
+<p class="c6"><span class="c4">This can be applied to our situation. We have a legacy eZ Publish extension that can be installed through composer. Since we have designed new classes to follow the dependency inversion principle, we can define services for all of those, and make legacy use those services instead. Yes, it means we have to maintain two different ways of initializing the objects. But we also get the benefit of a full featured dependency injection container! We can inject a logger, and natively use semantic configuration to build and configure our objects, without playing with INI injection.</span>
+</p>
+<p class="c6"><span
+        class="c4">The result is that we have code that can run on a pure eZ Publish legacy, including 4.x, </span><span
+        class="c2">but</span><span class="c4">&nbsp;takes advantage of the new stack. It increases our flexibility as developers, by allowing us to further develop a part by gradually replacing components with more modern one.</span>
+</p>
+<p class="c9"><span class="c5"></span></p></body>
+</html>

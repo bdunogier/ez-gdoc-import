@@ -1,0 +1,5 @@
+services:
+#    bd_gdoc.command.import:
+#        class: BD\GoogleDocImportBundle\Command\ImportGoogleDocumentCommand
+#        tags:
+#            - { name: console.command }
