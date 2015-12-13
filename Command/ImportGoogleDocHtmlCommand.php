@@ -13,7 +13,7 @@ use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\RequestStack;
 
-class SandboxCommand extends ContainerAwareCommand
+class ImportGoogleDocHtmlCommand extends ContainerAwareCommand
 {
     protected function configure()
     {
