@@ -38,7 +38,6 @@ class ImportGoogleDocHtmlCommand extends ContainerAwareCommand
         $docbookDoc = $converter->convert($htmlDoc);
 
         $xml = $docbookDoc->saveHTML();
-        // dump($xml); return;
 
         $repository = $this->getContainer()->get('ezpublish.api.repository');
         $userService = $this->getContainer()->get('ezpublish.api.service.user');
